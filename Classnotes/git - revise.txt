@@ -1,0 +1,20 @@
+
+Step 1 : create github.com acoount 
+         creae github - code repository/server repo
+         git commands 
+
+step 2: download and install git software 
+https://git-scm.com/downloads
+
+Step 3:create folder - e/d 
+       airtel_v2
+	   
+	   copy and paste commands 
+	   
+	   
+	   
+	   
+
+
+
+
