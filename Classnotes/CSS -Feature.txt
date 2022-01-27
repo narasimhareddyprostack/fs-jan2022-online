@@ -1,0 +1,14 @@
+CSS - Feature/Adv
+===================
+1)Style - Reusablity(write once, use many times)
+2)CSS - Platform Indipendent 
+2)Portaable 
+3)Browser compatible 
+4)Global Change - feature  
+	index.html
+	service.html
+	contact.html      one.css
+5)inline styles 
+6)internal 
+7)External Styles 
+8)CSS - good community support 
