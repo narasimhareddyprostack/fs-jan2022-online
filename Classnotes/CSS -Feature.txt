@@ -1,6 +1,9 @@
 CSS - Feature/Adv
 ===================
 1)Style - Reusablity(write once, use many times)
+  Readability
+  modularity
+
 2)CSS - Platform Indipendent 
 2)Portaable 
 3)Browser compatible 
@@ -8,7 +11,10 @@ CSS - Feature/Adv
 	index.html
 	service.html
 	contact.html      one.css
-5)inline styles 
-6)internal 
-7)External Styles 
+	
+5)inline styles     - tag/element styles  
+6)internal          - page level styles 
+7)External Styles   - Application level styles 
+
 8)CSS - good community support 
+------------------------------------------
