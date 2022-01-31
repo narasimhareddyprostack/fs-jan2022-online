@@ -1,0 +1,61 @@
+Bootstrap : Grid System
+-----------------------
+Grid System is most fundamental and commonly used to concept of bootstrap.
+To display application layout propery on 
+multiple devices of multiple screen size like
+desktop,laptop,tab,mobile, we should for grid system.
+
+In Bootstrap we can split total screen into 12 columsn.
+With in 12 columns length we can take any number of 
+elements of same size or different sizes.
+
+12 * 1  =  Each element is 1 column length 
+4 * 3   =  4 elements and each element is 3 column length
+6*2     =  6 elements and each element is 2 column length
+e1 * 3 + e2 * 4 + e3 * 5 = 
+		e1 of 3 column length 
+		e2 of 4 column length
+		e3 of 5 column length
+		
+How to impliment Grid system:
+----------------------------
+we can impliment grid by using 2 classes 
+1. row class 
+2.col-scrensize-noofcolumns 
+
+1.row class 
+<div class="row"></div>
+
+2.with in row , we can define columns by using following class
+col-scrensize-noofcolumns 
+
+Example 
+col-md-4
+col-sm-6 
+
+The following are bootstrap screen size 
+
+lg : large size 
+md : medium size 
+sm :small size 
+xs :extra small size 
+
+<div class="row">
+	<div class="col-lg-3">Element -1 </div>
+	<div class="col-lg-3">Element -1 </div>
+	<div class="col-lg-3">Element -1 </div>
+	<div class="col-lg-3">Element -1 </div>
+</div> 
+
+Note: Here row contains 4 elements and each elemetns 
+contains 3 columns length.
+
+
+Nested Grid:
+------------
+row	
+	col-6
+		row
+			col-6 
+			col-6
+	col-6
