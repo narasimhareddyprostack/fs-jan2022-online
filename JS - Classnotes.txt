@@ -1,0 +1,10 @@
+Identifier Rules?
+-----------------
+Identifier is a - name in javascript program.
+
+- Identifier should contains -  a to z 
+							    A to Z 
+								_ , $ 
+  Identifier should not start with digit 
+  Identifier should not contains any special symbol
+  Identifier Shoub not use any keywords/reserved words.
