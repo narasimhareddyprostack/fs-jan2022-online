@@ -8,3 +8,13 @@ Identifier is a - name in javascript program.
   Identifier should not start with digit 
   Identifier should not contains any special symbol
   Identifier Shoub not use any keywords/reserved words.
+  
+  
+  Keywords/Reserved words
+  -------------------------
+  some words are reserved for specific purpose.
+  function
+  class 
+  var 
+  
+  
