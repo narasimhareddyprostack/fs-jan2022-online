@@ -1,5 +1,8 @@
-function wish() {
-    console.log("GN")
+var wish = () => {
+    console.log("GM")
 }
 wish()
+var wish = () => {
+    console.log("GN")
+}
 wish()

@@ -1,0 +1,11 @@
+1.Concise/Short Code  
+2.Implicit Return  - 
+  if function has only one statement 
+  ie return we are using implicit return
+========================
+3.Function over riding conflicts will resolve using fat arrow
+4.this keyword - return minimal Object.
+
+
+what is this keyword?
+this is keyword, pointing to curret Object.
