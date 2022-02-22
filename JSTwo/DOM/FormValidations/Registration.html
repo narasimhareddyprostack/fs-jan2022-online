@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#">Form Validation</a>
+    </nav>
+    
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Registration Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <form onsubmit="return validate()">
+                            <div class="form-group">
+                                <input placeholder="User Name" type="text" id="userName" class="form-control" />
+                                <span id="message" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <input placeholder="Email" type="email" id="userEmail" class="form-control" />
+                                <span id="emailMessage" style="color:red"></span>
+                            </div>
+                            <div class="form-group">
+                                <input placeholder="Password" type="text" id="userPassword" class="form-control" />
+                                <span id="passwordMessage" style="color:orangered">
+                            </div>
+                            <input type="submit" class="btn btn-success" />
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function validate() {
+        let name = document.getElementById("userName").value;
+        let email = document.getElementById("userEmail").value;
+        let password = document.getElementById("userPassword").value;
+        if (name == "") {
+            document.getElementById("message").innerHTML = `Please Enter Value`
+            /*  let tag_Ref = document.getElementById("message");
+             console.log(tag_Ref) */
+            return false;
+        }
+        if (name.length < 6) {
+            document.getElementById("message").innerHTML = "Min 6 Char"
+            return false;
+        }
+
+        if (email == "") {
+            document.getElementById("emailMessage").innerHTML = "Please Enter Email";
+            return false
+        }
+        if (password == "" || password.length < 6) {
+            document.getElementById("passwordMessage").innerHTML = "Please Enter Proper Password & Min 6 Char"
+            return false
+        }
+
+
+    }
+
+</script>
+
+</html>

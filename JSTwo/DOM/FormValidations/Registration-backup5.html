@@ -1,0 +1,50 @@
+<html>
+
+<head></head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="return validate()">
+        <label for="">User Name</label>
+        <input type="text" id="userName" /> <br />
+        <span id="message" style="color: red;"> </span> <br />
+        <label for="">Email</label>
+        <input type="email" id="userEmail" /> <br />
+        <span id="emailMessage" style="color:red"></span><br />
+        <label>Password</label>
+        <input type="text" id="userPassword" /> <br />
+        <span id="passwordMessage" style="color:orangered"></span> <br />
+        <input type="submit" value="Registration" />
+    </form>
+</body>
+<script>
+    function validate() {
+        let name = document.getElementById("userName").value;
+        let email = document.getElementById("userEmail").value;
+        let password = document.getElementById("userPassword").value;
+        if (name == "") {
+            document.getElementById("message").innerHTML = `Please Enter Value`
+            /*  let tag_Ref = document.getElementById("message");
+             console.log(tag_Ref) */
+            return false;
+        }
+        if (name.length < 6) {
+            document.getElementById("message").innerHTML = "Min 6 Char"
+            return false;
+        }
+
+        if (email == "") {
+            document.getElementById("emailMessage").innerHTML = "Please Enter Email";
+            return false
+        }
+        if (password == "" || password.length < 6) {
+            document.getElementById("passwordMessage").innerHTML = "Please Enter Proper Password & Min 6 Char"
+            return false
+        }
+
+
+    }
+
+</script>
+
+</html>
