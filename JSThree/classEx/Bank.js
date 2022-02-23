@@ -3,15 +3,20 @@ class Savings_Account {
     open_Account() {
         console.log("Account Opened Successfully");
     }
-    deposit() { }
-    withdraw() { }
-    getStatement() { }
+    deposit() {
+        console.log("Amount Deposited")
+    }
+    withdraw() {
+        console.log("Amount Withdrawl")
+    }
+    getStatement() {
+        console.log("Statement ---")
+    }
     getBal() { }
     close_Account() { }
 }
 let c1 = new Savings_Account();
-let c2 = new Savings_Account();
-console.log(c1.min_Bal);
-console.log(c2.min_Bal);
-c1.open_Account();
-c2.open_Account()
+c1.open_Account()
+c1.deposit()
+c1.withdraw()
+
