@@ -1,9 +1,24 @@
-let User = { name: "Narasimha", email: "psa@gmail.com", password: "123456789" }
+const bcrypt = require('bcryptjs')  //es 5
 
+//import bcrypt from 'bcryptjs'//es6
 
-let new_User = { name: "Narasimha", email: "fkajfklasfjvljv;ll;afjadfoeiru", password: "fl;afjal;fjal;fkajflkfjaf;la" }
+let user = { name: 'Rahul', email: "rahul@gmail.com", password: "HappyBD", cc: "12345678" }
 
+let salt = bcrypt.genSaltSync(10);
 
-//how to convert user sensitive data to hashed format?
+let newPassword = bcrypt.hashSync(user.password, salt)
+let newCC = bcrypt.hashSync(user.cc, salt);
+/* console.log(newCC)
+console.log(newPassword) */
 
-In JS , with help of bcryptJS?
+let new_user = { ...user, password: newPassword, cc: newCC }
+console.log(user);
+console.log(new_user);
+
+let flag = bcrypt.compareSync("HappyBD", new_user.password);
+if (flag) {
+    console.log("Login Sucessfull")
+}
+else {
+    console.log("Login fail")
+}
