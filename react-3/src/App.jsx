@@ -1,18 +1,14 @@
+import React from 'react'
 import Navbar from './Navbar/Navbar'
-let App = () => {
-
-    return <div>
-        <Navbar />
-        <Navbar />
-        <Navbar />
-        <Navbar />
-        <Navbar />
-        <Navbar />
-        <h1>Hello,GM</h1>
-        <h1>Hello,GM</h1>
-        <h1>Hello,GM</h1>
-        <h1>Hello,GM</h1>
-        <h1>Hello,GM</h1>
-    </div>
+import Message from './Message/Message'
+const App = () => {
+    return (
+        <div>
+            <Navbar />
+            <Message />
+           
+        </div>
+    )
 }
+
 export default App
