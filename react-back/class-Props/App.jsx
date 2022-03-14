@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import User from './User/User'
+import CompA from './PropsEx/CompA'
 const App = () => {
     return (
         <div>
             <Navbar />
-            <User />
+            <CompA />
+
         </div>
     )
 }

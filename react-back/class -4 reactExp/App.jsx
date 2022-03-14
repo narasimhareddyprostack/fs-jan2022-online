@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import User from './User/User'
+import Message from './Message/Message'
 const App = () => {
     return (
         <div>
             <Navbar />
-            <User />
+            <Message />
+           
         </div>
     )
 }

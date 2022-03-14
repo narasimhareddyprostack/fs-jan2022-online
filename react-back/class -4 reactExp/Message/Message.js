@@ -1,7 +1,6 @@
 import React from 'react'
 
-class Message extends React.Component {
-    
+class Message extends React.Component { 
     message = "Good Morning"
     ename = 'Rahul Gandhi'
     emp = { id: 101, name: "Rahul", salary: 45000 }
