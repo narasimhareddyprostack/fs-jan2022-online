@@ -1,20 +1,27 @@
 import React from 'react'
 class Message extends React.Component {
-    message = "Hello";
+    state = {
+        message: "Hello"
+    }
     gmHandler = () => {
-        console.log("Test case 123")
-        this.message = "Hello, Good Morning"
-        console.log(this.message)
-        this.forceUpdate()
+        console.log("Test case Two")
+        this.setState({ message: "Hello,Good Morning" })
+    }
+    gaHandler = () => {
+        this.setState({ message: "Hello, Good After noon! Lunch Time" })
+    }
+    gnHandler = () => {
+        this.setState({ message: "Dinner Time" })
     }
     render() {
-        return <>
-            <h1> Message Component</h1>
-            <h3>Message: {this.message}</h3>
+        console.log("Test Case one")
+        return <div>
+            <h1>Message Component</h1>
+            <h2>Message:{this.state.message}</h2>
             <button onClick={this.gmHandler}>GM</button>
-
-            <button>GN</button>
-        </>
+            <button onClick={this.gaHandler}>GA</button>
+            <button onClick={this.gnHandler}>GN</button>
+        </div>
     }
 }
 
