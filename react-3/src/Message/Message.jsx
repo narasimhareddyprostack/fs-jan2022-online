@@ -1,27 +1,23 @@
-import React from 'react'
-class Message extends React.Component {
+import React, { Component } from 'react'
+
+class Message extends Component {
     state = {
-        message: "Hello"
+        msg: "Hello"
     }
-    gmHandler = () => {
-        console.log("Test case Two")
-        this.setState({ message: "Hello,Good Morning" })
-    }
-    gaHandler = () => {
-        this.setState({ message: "Hello, Good After noon! Lunch Time" })
-    }
-    gnHandler = () => {
-        this.setState({ message: "Dinner Time" })
+    messageHandler = (msg) => {
+        this.setState({ msg: msg })
     }
     render() {
-        console.log("Test Case one")
-        return <div>
-            <h1>Message Component</h1>
-            <h2>Message:{this.state.message}</h2>
-            <button onClick={this.gmHandler}>GM</button>
-            <button onClick={this.gaHandler}>GA</button>
-            <button onClick={this.gnHandler}>GN</button>
-        </div>
+        return (
+            <div>
+                <h2>Wish Message : {this.state.msg}</h2>
+                <button onClick={this.messageHandler.bind(this, "GM")}>GM</button>
+                <button onClick={this.messageHandler.bind(this, "GA")}>GA</button>
+                <button onClick={() => {
+                    this.setState({ msg: "Good Nigth, Go for Dinner" })
+                }}>GN</button>
+            </div>
+        )
     }
 }
 

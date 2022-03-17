@@ -10,7 +10,9 @@ class Product extends Component {
     incrHandler = () => {
         this.setState({ qty: this.state.qty + 1 })
     }
-    decrHandler = () => { }
+    decrHandler = () => {
+        this.setState({ qty: this.state.qty - 1 })
+    }
     render() {
         return (
             <div>
@@ -30,7 +32,8 @@ class Product extends Component {
                                         <td>{this.state.product_Name}</td>
                                         <td><img src={this.state.image} height="100px" /></td>
                                         <td>{this.state.price}</td>
-                                        <td><i class="fa fa-minus-circle"></i>
+                                        <td>
+                                            <i class="fa fa-minus-circle" onClick={this.decrHandler}></i>
                                             {this.state.qty}
                                             <i class="fa fa-plus-circle" onClick={this.incrHandler}></i></td>
                                         <td>{this.state.qty * this.state.price}</td>
