@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar';
-import Login from './Form/Login'
-import Registration from './Form/Registration'
+import Message from './Message/Message'
+import Employee from './Data/Employee'
 class App extends Component {
     render() {
         return (
             <>
                 <Navbar />
                 {/*   <h1>App Component</h1> */}
-                <Registration />
-
+                <Employee />
             </>
         )
     }
