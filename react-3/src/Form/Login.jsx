@@ -1,53 +1,34 @@
-import React, { Component } from 'react'
-
-class Login extends Component {
+import React from 'react'
+class Login extends React.Component {
     state = {
         email: "",
         password: ""
     }
-    updateHandler = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-    /* emailHandler = (event) => {
-        this.setState({ email: event.target.value })
+    emailHandler = (event) => {
+        console.log(event.target.value)
     }
     passwordHandler = (event) => {
+        console.log("Test Case 123 - password")
         this.setState({ password: event.target.value })
-    } */
+    }
     submitHandler = (event) => {
         event.preventDefault();
-        alert(JSON.stringify(this.state))
+        console.log(this.state);
     }
     render() {
-        return (
-            <div className="container mt-5">
-                <pre>{JSON.stringify(this.state)}</pre>
-                <div className="row">
-                    <div className="col-md-5">
-                        <div className="card">
-                            <div className="card-header">
-                                <form onSubmit={this.submitHandler}>
-                                    <div className="form-group">
-                                        <input type="text" className="form-control" name="email" placeholder="Email Id" onChange={this.updateHandler} />
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="text" className="form-control" name="password" placeholder="Password" onChange={this.updateHandler} />
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="submit" className="btn btn-success" />
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        )
+        return <div>
+            <h2>Login Page</h2>
+            <pre>{JSON.stringify(this.state)}</pre>
+            <form onSubmit={this.submitHandler}>
+                <label htmlFor="">Email</label>
+                <input type="text" onChange={this.emailHandler} />
+                <br />
+                <label>Password</label>
+                <input type="text" onChange={this.passwordHandler} />
+                <br />
+                <input type="submit" value="Login" />
+            </form>
+        </div>
     }
 }
-
 export default Login

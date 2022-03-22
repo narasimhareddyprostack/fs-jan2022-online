@@ -8,7 +8,7 @@ class App extends Component {
             <>
                 <Navbar />
                 {/*   <h1>App Component</h1> */}
-                <Registration />
+                <Login />
 
             </>
         )
