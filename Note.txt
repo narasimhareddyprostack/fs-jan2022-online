@@ -1,0 +1,10 @@
+react component   - Yes
+react props(variable/array/object/method as props)  
+react state             - yes 
+react event handling   - yes 
+event Binding          - yes 
+react list rendering   - yes 
+conditional rendering  - yes
+Routing                - yes 
+HTTP API (Axios)       - yes   
+Class Component Life Cycle methods - yes 
