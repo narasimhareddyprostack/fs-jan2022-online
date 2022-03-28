@@ -8,3 +8,4 @@ conditional rendering  - yes
 Routing                - yes 
 HTTP API (Axios)       - yes   
 Class Component Life Cycle methods - yes 
+========================================

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import Message from './HookEx/Message'
-import Counter from './HookEx/Counter'
+import Index from './Home/Index'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
+import ContactApp from './ContactApp/ContactApp'
 class App extends Component {
     render() {
         return (
@@ -11,9 +10,8 @@ class App extends Component {
                 <Router>
                     <Navbar />
                     <Routes>
-                        <Route path="/useState" element={<Message />} />
-                        <Route path="/counter" element={<Counter />} />
-
+                        <Route path="/contact" element={<ContactApp />} />
+                        <Route path="/index" element={<Index />} />
                     </Routes>
                 </Router>
             </div>
