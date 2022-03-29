@@ -9,3 +9,21 @@ Routing                - yes
 HTTP API (Axios)       - yes   
 Class Component Life Cycle methods - yes 
 ========================================
+Step 1:
+React View - ->   Redux Action 
+React Comp - dispatch an action 
+
+Step 2: 
+React Action ---> Reducer
+action invoking reducer 
+
+Step 3: 
+Reducer --- > Store 
+reducer update/create store based on action type 
+
+Step 4: 
+once store is update, reflect back to React view
+
+Required JS Package:
+
+npm install redux react-redux redux-devtools-extension

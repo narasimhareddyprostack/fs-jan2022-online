@@ -1,21 +1,24 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import Message from './HookEx/Message'
-import Counter from './HookEx/Counter'
+import Message from './Message/Message'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 class App extends Component {
     render() {
         return (
             <div>
-                <Router>
-                    <Navbar />
-                    <Routes>
-                        <Route path="/useState" element={<Message />} />
-                        <Route path="/counter" element={<Counter />} />
+                <Provider store={store}>
+                    <Router>
+                        <Navbar />
+                        <Routes>
+                            <Route path="/reduxEx" element={<Message />} />
 
-                    </Routes>
-                </Router>
+
+                        </Routes>
+                    </Router>
+                </Provider>
             </div>
         )
     }
