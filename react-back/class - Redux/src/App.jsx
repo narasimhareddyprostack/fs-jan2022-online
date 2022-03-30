@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import Product from './Product/Product'
-import { store } from './redux/store'
-import { Provider } from 'react-redux'
 import Message from './Message/Message'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 class App extends Component {
     render() {
         return (
@@ -13,12 +13,12 @@ class App extends Component {
                     <Router>
                         <Navbar />
                         <Routes>
-                            <Route path="/counter" element={<Product />} />
-                            <Route path="/message" element={<Message />} />
+                            <Route path="/reduxEx" element={<Message />} />
+
+
                         </Routes>
                     </Router>
                 </Provider>
-
             </div>
         )
     }

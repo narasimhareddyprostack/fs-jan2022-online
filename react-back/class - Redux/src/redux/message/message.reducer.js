@@ -7,7 +7,7 @@ let messageReducer = (state = intialState, action) => {
     console.log(action.type)
     switch (action.type) {
         case GM:
-            return { message: action.payload }
+            return { message: "Good Morning" }
         case GN:
             return { message: "Good Night" }
         default:
