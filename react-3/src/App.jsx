@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import User from './User/User'
-import { store } from './redux/store'
-import { Provider } from 'react-redux'
-
+import Register from './Register/Register'
+import Signup from './Register/Signup'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 class App extends Component {
     render() {
         return (
             <div>
-                <Provider store={store}>
-                    <Router>
-                        <Navbar />
-                        <Routes>
-                            <Route path="/user" element={<User />} />
-                        </Routes>
-                    </Router>
-                </Provider>
+                <Router>
+                    <Navbar />
+                    <Routes>
+                        <Route path="/register" element={<Signup />} />
+                    </Routes>
+                </Router>
+
 
             </div >
         )
